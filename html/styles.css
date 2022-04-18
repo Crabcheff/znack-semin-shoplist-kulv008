@@ -1,0 +1,69 @@
+:root {
+	--nav-height: 25px;
+	font-family: 'Calibri';
+	letter-spacing: 1.7px;
+	--blur: 10px;
+}
+
+body {
+	background-image: url('https://www.archimatetool.com/wp-content/uploads/2021/02/Archi-Full.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	margin: 0;
+}
+
+.glassmorphism {
+	background: rgba(146, 146, 146, 0.753);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(var(--blur));
+	-webkit-backdrop-filter: blur(var(--blur));
+}
+
+.navigation {
+	display: flex;
+	justify-content: center;
+	gap: 2em;
+	padding: 0.8em;
+	position: sticky;
+	top: 0;
+	z-index: 900;
+}
+
+.navigation a {
+	font-size: 1.3em;
+	text-decoration: none;
+	color: black;
+	font-weight: normal;
+}
+
+.title-section {
+	height: 70vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.title-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50vw;
+	border-radius: 2em;
+}
+
+.title {
+	text-transform: uppercase;
+	font-size: 2.3em;
+	padding: 0 25px;
+}
+
+main article {
+	padding: 1em 20vw;
+	margin: 5em 0;
+}
+
+.footer {
+	text-align: center;
+}

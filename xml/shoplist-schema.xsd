@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="users">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="user"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="user">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:integer" />
+				<xs:element name="first_name" type="xs:string" />
+				<xs:element name="surname" type="xs:string" />
+				<xs:element name="email" type="xs:string" />
+				<xs:element name="phone" type="xs:integer" />
+				<xs:element name="items" type="item_list" />
+				<xs:element name="shopping_lists" type="shopping_lists" />
+				<xs:element name="stores" type="store_list"></xs:element>
+			</xs:sequence>
+			<xs:attribute name="VIP" type="xs:boolean" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="store">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:integer" />
+				<xs:element name="name" type="xs:string" />
+				<xs:element name="address" type="xs:string" />
+				<xs:element name="email" type="xs:string" />
+				<xs:element name="phone" type="xs:integer" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="store_list">
+		<xs:sequence>
+			<xs:element ref="store" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="item">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:integer" />
+				<xs:element name="name" type="xs:string" />
+				<xs:element name="price" type="xs:decimal" />
+				<xs:element name="currency" type="xs:string" />
+				<xs:element name="store_id" type="xs:integer"></xs:element>
+			</xs:sequence>
+			<xs:attribute name="favourite" type="xs:boolean" />
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="item_list">
+		<xs:sequence>
+			<xs:element ref="item" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="group">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:integer" />
+				<xs:element name="amount" type="xs:integer" />
+				<xs:element minOccurs="1" maxOccurs="1" ref="item" />
+			</xs:sequence>
+			<xs:attribute name="checked" type="xs:boolean" />
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="group_list">
+		<xs:sequence>
+			<xs:element ref="group" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="shopping_list">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:integer" />
+				<xs:element name="name" type="xs:string" />
+				<xs:element name="created" type="xs:date" />
+				<xs:element name="groups" type="group_list" />
+			</xs:sequence>
+			<xs:attribute name="approved" type="xs:boolean" />
+			<xs:attribute name="finished" type="xs:boolean" />
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="shopping_lists">
+		<xs:sequence>
+			<xs:element ref="shopping_list" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

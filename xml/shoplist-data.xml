@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="shoplist-style.xsl"?>
+
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="shoplist-schema.xsd">
+
+	<user VIP="true">
+		<id>1</id>
+		<first_name>Ragnar</first_name>
+		<surname>Lodbrok</surname>
+		<email>podbaba@kaufland.cz</email>
+		<phone>789456123</phone>
+		<items>	
+			<item favourite="true">
+				<id>1</id>
+				<name>Milk</name>
+				<price>15</price>
+				<currency>CZK</currency>
+				<store_id>2648</store_id>
+			</item>
+			<item favourite="false">
+				<id>2</id>
+				<name>Bread</name>
+				<price>12</price>
+				<currency>CZK</currency>
+				<store_id>7543</store_id>
+			</item>
+		</items>
+		<shopping_lists>
+			<shopping_list approved="true" finished="false">
+				<id>0</id>
+				<name>Friday shopping</name>
+				<created>2012-12-13</created>
+				<groups>
+					<group checked="false">
+						<id>0</id>
+						<amount>2</amount>
+						<item favourite="false">
+							<id>1</id>
+							<name>Bread</name>
+							<price>12</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+					<group checked="false">
+						<id>2</id>
+						<amount>3</amount>
+						<item favourite="true">
+							<id>0</id>
+							<name>Milk</name>
+							<price>15</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+				</groups>
+			</shopping_list>
+		</shopping_lists>
+		<stores>
+			<store>
+				<id>1</id>
+				<name>Kaufland</name>
+				<address>Pod Paťankou 2743/1b, 160 00 Praha 6</address>
+				<email>podbaba@kaufland.cz</email>
+				<phone>220514706</phone>
+			</store>
+		</stores>
+	</user>
+
+	<user VIP="true">
+		<id>2</id>
+		<first_name>Bjorn</first_name>
+		<surname>Ironbrk</surname>
+		<email>two@test.cz</email>
+		<phone>789123123</phone>
+		<items>	
+			<item favourite="true">
+				<id>3</id>
+				<name>Mead</name>
+				<price>15</price>
+				<currency>CZK</currency>
+				<store_id>2659</store_id>
+			</item>
+			<item favourite="true">
+				<id>2</id>
+				<name>Bread</name>
+				<price>12</price>
+				<currency>CZK</currency>
+				<store_id>7543</store_id>
+			</item>
+		</items>
+		<shopping_lists>
+			<shopping_list approved="true" finished="true">
+				<id>0</id>
+				<name>Friday shopping</name>
+				<created>2022-04-14</created>
+				<groups>
+					<group checked="false">
+						<id>0</id>
+						<amount>2</amount>
+						<item favourite="false">
+							<id>1</id>
+							<name>Bread</name>
+							<price>12</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+					<group checked="false">
+						<id>2</id>
+						<amount>3</amount>
+						<item favourite="true">
+							<id>0</id>
+							<name>Milk</name>
+							<price>15</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+				</groups>
+			</shopping_list>
+		</shopping_lists>
+		<stores>
+			<store>
+				<id>1</id>
+				<name>Kaufland</name>
+				<address>Pod Paťankou 2743/1b, 160 00 Praha 6</address>
+				<email>podbaba@kaufland.cz</email>
+				<phone>220514706</phone>
+			</store>
+		</stores>
+	</user>
+	<user VIP="true">
+		<id>3</id>
+		<first_name>Rollo</first_name>
+		<surname>France</surname>
+		<email>three@test.cz</email>
+		<phone>789456789</phone>
+		<items>	
+			<item favourite="true">
+				<id>1</id>
+				<name>Meat</name>
+				<price>30</price>
+				<currency>CZK</currency>
+				<store_id>7948</store_id>
+			</item>
+			<item favourite="true">
+				<id>2</id>
+				<name>Bread</name>
+				<price>12</price>
+				<currency>CZK</currency>
+				<store_id>7543</store_id>
+			</item>
+		</items>
+		<shopping_lists>
+			<shopping_list approved="true" finished="false">
+				<id>0</id>
+				<name>Friday shopping</name>
+				<created>2021-06-13</created>
+				<groups>
+					<group checked="false">
+						<id>0</id>
+						<amount>2</amount>
+						<item favourite="false">
+							<id>1</id>
+							<name>Bread</name>
+							<price>12</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+					<group checked="false">
+						<id>2</id>
+						<amount>3</amount>
+						<item favourite="true">
+							<id>0</id>
+							<name>Milk</name>
+							<price>15</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+				</groups>
+			</shopping_list>
+		</shopping_lists>
+		<stores>
+			<store>
+				<id>1</id>
+				<name>Kaufland</name>
+				<address>Pod Paťankou 2743/1b, 160 00 Praha 6</address>
+				<email>podbaba@kaufland.cz</email>
+				<phone>220514706</phone>
+			</store>
+		</stores>
+	</user>
+	<user VIP="true">
+		<id>4</id>
+		<first_name>Lagertha</first_name>
+		<surname>Shieldbearer</surname>
+		<email>four@test.cz</email>
+		<phone>753456123</phone>
+		<items>	
+			<item favourite="true">
+				<id>1</id>
+				<name>Milk</name>
+				<price>15</price>
+				<currency>CZK</currency>
+				<store_id>2648</store_id>
+			</item>
+			<item favourite="false">
+				<id>2</id>
+				<name>Bread</name>
+				<price>12</price>
+				<currency>CZK</currency>
+				<store_id>7543</store_id>
+			</item>
+		</items>
+		<shopping_lists>
+			<shopping_list approved="true" finished="false">
+				<id>0</id>
+				<name>Friday shopping</name>
+				<created>2012-12-13</created>
+				<groups>
+					<group checked="false">
+						<id>0</id>
+						<amount>2</amount>
+						<item favourite="false">
+							<id>1</id>
+							<name>Bread</name>
+							<price>12</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+					<group checked="false">
+						<id>2</id>
+						<amount>3</amount>
+						<item favourite="true">
+							<id>0</id>
+							<name>Milk</name>
+							<price>15</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+				</groups>
+			</shopping_list>
+		</shopping_lists>
+		<stores>
+			<store>
+				<id>1</id>
+				<name>Kaufland</name>
+				<address>Pod Paťankou 2743/1b, 160 00 Praha 6</address>
+				<email>podbaba@kaufland.cz</email>
+				<phone>220514706</phone>
+			</store>
+		</stores>
+	</user>
+	<user VIP="true">
+		<id>5</id>
+		<first_name>Floki</first_name>
+		<surname>Shipbuilder</surname>
+		<email>Five@test.cz</email>
+		<phone>781548623</phone>
+		<items>	
+			<item favourite="true">
+				<id>1</id>
+				<name>Milk</name>
+				<price>15</price>
+				<currency>CZK</currency>
+				<store_id>2648</store_id>
+			</item>
+			<item favourite="false">
+				<id>2</id>
+				<name>Bread</name>
+				<price>12</price>
+				<currency>CZK</currency>
+				<store_id>7543</store_id>
+			</item>
+		</items>
+		<shopping_lists>
+			<shopping_list approved="true" finished="false">
+				<id>0</id>
+				<name>Friday shopping</name>
+				<created>2012-12-13</created>
+				<groups>
+					<group checked="false">
+						<id>0</id>
+						<amount>2</amount>
+						<item favourite="false">
+							<id>1</id>
+							<name>Bread</name>
+							<price>12</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+					<group checked="false">
+						<id>2</id>
+						<amount>3</amount>
+						<item favourite="true">
+							<id>0</id>
+							<name>Milk</name>
+							<price>15</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+				</groups>
+			</shopping_list>
+		</shopping_lists>
+		<stores>
+			<store>
+				<id>1</id>
+				<name>Kaufland</name>
+				<address>Pod Paťankou 2743/1b, 160 00 Praha 6</address>
+				<email>podbaba@kaufland.cz</email>
+				<phone>220514706</phone>
+			</store>
+		</stores>
+	</user>
+	<user VIP="true">
+		<id>6</id>
+		<first_name>Athlestan</first_name>
+		<surname>Monk</surname>
+		<email>six@test.cz</email>
+		<phone>789478953</phone>
+		<items>	
+			<item favourite="true">
+				<id>1</id>
+				<name>Milk</name>
+				<price>15</price>
+				<currency>CZK</currency>
+				<store_id>2648</store_id>
+			</item>
+			<item favourite="false">
+				<id>2</id>
+				<name>Bread</name>
+				<price>12</price>
+				<currency>CZK</currency>
+				<store_id>7543</store_id>
+			</item>
+		</items>
+		<shopping_lists>
+			<shopping_list approved="true" finished="false">
+				<id>0</id>
+				<name>Friday shopping</name>
+				<created>2012-12-13</created>
+				<groups>
+					<group checked="false">
+						<id>0</id>
+						<amount>2</amount>
+						<item favourite="false">
+							<id>1</id>
+							<name>Bread</name>
+							<price>12</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+					<group checked="false">
+						<id>2</id>
+						<amount>3</amount>
+						<item favourite="true">
+							<id>0</id>
+							<name>Milk</name>
+							<price>15</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+				</groups>
+			</shopping_list>
+		</shopping_lists>
+		<stores>
+			<store>
+				<id>1</id>
+				<name>Kaufland</name>
+				<address>Pod Paťankou 2743/1b, 160 00 Praha 6</address>
+				<email>podbaba@kaufland.cz</email>
+				<phone>220514706</phone>
+			</store>
+		</stores>
+	</user>
+	<user VIP="true">
+		<id>7</id>
+		<first_name>Jarl</first_name>
+		<surname>Haraldson</surname>
+		<email>seven@test.cz</email>
+		<phone>789454563</phone>
+		<items>	
+			<item favourite="true">
+				<id>1</id>
+				<name>Milk</name>
+				<price>15</price>
+				<currency>CZK</currency>
+				<store_id>2648</store_id>
+			</item>
+			<item favourite="false">
+				<id>2</id>
+				<name>Bread</name>
+				<price>12</price>
+				<currency>CZK</currency>
+				<store_id>7543</store_id>
+			</item>
+		</items>
+		<shopping_lists>
+			<shopping_list approved="false" finished="false">
+				<id>0</id>
+				<name>Friday shopping</name>
+				<created>2012-12-13</created>
+				<groups>
+					<group checked="false">
+						<id>0</id>
+						<amount>2</amount>
+						<item favourite="false">
+							<id>1</id>
+							<name>Bread</name>
+							<price>12</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+					<group checked="false">
+						<id>2</id>
+						<amount>3</amount>
+						<item favourite="true">
+							<id>0</id>
+							<name>Milk</name>
+							<price>15</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+				</groups>
+			</shopping_list>
+		</shopping_lists>
+		<stores>
+			<store>
+				<id>1</id>
+				<name>Kaufland</name>
+				<address>Pod Paťankou 2743/1b, 160 00 Praha 6</address>
+				<email>podbaba@kaufland.cz</email>
+				<phone>220514706</phone>
+			</store>
+		</stores>
+	</user>
+	<user VIP="true">
+		<id>8</id>
+		<first_name>Siggy</first_name>
+		<surname>Gilsiig</surname>
+		<email>eight@test.cz</email>
+		<phone>789454263</phone>
+		<items>	
+			<item favourite="true">
+				<id>1</id>
+				<name>Milk</name>
+				<price>15</price>
+				<currency>CZK</currency>
+				<store_id>2648</store_id>
+			</item>
+			<item favourite="false">
+				<id>2</id>
+				<name>Bread</name>
+				<price>12</price>
+				<currency>CZK</currency>
+				<store_id>7543</store_id>
+			</item>
+		</items>
+		<shopping_lists>
+			<shopping_list approved="true" finished="true">
+				<id>0</id>
+				<name>Friday shopping</name>
+				<created>2012-12-13</created>
+				<groups>
+					<group checked="false">
+						<id>0</id>
+						<amount>2</amount>
+						<item favourite="false">
+							<id>1</id>
+							<name>Bread</name>
+							<price>12</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+					<group checked="false">
+						<id>2</id>
+						<amount>3</amount>
+						<item favourite="true">
+							<id>0</id>
+							<name>Milk</name>
+							<price>15</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+				</groups>
+			</shopping_list>
+		</shopping_lists>
+		<stores>
+			<store>
+				<id>1</id>
+				<name>Kaufland</name>
+				<address>Pod Paťankou 2743/1b, 160 00 Praha 6</address>
+				<email>podbaba@kaufland.cz</email>
+				<phone>220514706</phone>
+			</store>
+		</stores>
+	</user>
+	<user VIP="true">
+		<id>9</id>
+		<first_name>Ubba</first_name>
+		<surname>Ragnarson</surname>
+		<email>nine@test.cz</email>
+		<phone>789761123</phone>
+		<items>	
+			<item favourite="true">
+				<id>1</id>
+				<name>Milk</name>
+				<price>15</price>
+				<currency>CZK</currency>
+				<store_id>2648</store_id>
+			</item>
+			<item favourite="false">
+				<id>2</id>
+				<name>Bread</name>
+				<price>12</price>
+				<currency>CZK</currency>
+				<store_id>7543</store_id>
+			</item>
+		</items>
+		<shopping_lists>
+			<shopping_list approved="true" finished="false">
+				<id>0</id>
+				<name>Friday shopping</name>
+				<created>2012-12-13</created>
+				<groups>
+					<group checked="false">
+						<id>0</id>
+						<amount>2</amount>
+						<item favourite="false">
+							<id>1</id>
+							<name>Bread</name>
+							<price>12</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+					<group checked="false">
+						<id>2</id>
+						<amount>3</amount>
+						<item favourite="true">
+							<id>0</id>
+							<name>Milk</name>
+							<price>15</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+				</groups>
+			</shopping_list>
+		</shopping_lists>
+		<stores>
+			<store>
+				<id>1</id>
+				<name>Kaufland</name>
+				<address>Pod Paťankou 2743/1b, 160 00 Praha 6</address>
+				<email>podbaba@kaufland.cz</email>
+				<phone>220514706</phone>
+			</store>
+		</stores>
+	</user>
+	<user VIP="true">
+		<id>10</id>
+		<first_name>Sigurd</first_name>
+		<surname>Ragnarson</surname>
+		<email>ten@test.cz</email>
+		<phone>792456123</phone>
+		<items>	
+			<item favourite="true">
+				<id>1</id>
+				<name>Milk</name>
+				<price>15</price>
+				<currency>CZK</currency>
+				<store_id>2648</store_id>
+			</item>
+			<item favourite="false">
+				<id>2</id>
+				<name>Bread</name>
+				<price>12</price>
+				<currency>CZK</currency>
+				<store_id>7543</store_id>
+			</item>
+		</items>
+		<shopping_lists>
+			<shopping_list approved="true" finished="false">
+				<id>0</id>
+				<name>Friday shopping</name>
+				<created>2012-12-13</created>
+				<groups>
+					<group checked="false">
+						<id>0</id>
+						<amount>2</amount>
+						<item favourite="false">
+							<id>1</id>
+							<name>Bread</name>
+							<price>12</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+					<group checked="false">
+						<id>2</id>
+						<amount>3</amount>
+						<item favourite="true">
+							<id>0</id>
+							<name>Milk</name>
+							<price>15</price>
+							<currency>CZK</currency>
+							<store_id>0</store_id>
+						</item>
+					</group>
+				</groups>
+			</shopping_list>
+		</shopping_lists>
+		<stores>
+			<store>
+				<id>1</id>
+				<name>Kaufland</name>
+				<address>Pod Paťankou 2743/1b, 160 00 Praha 6</address>
+				<email>podbaba@kaufland.cz</email>
+				<phone>220514706</phone>
+			</store>
+		</stores>
+	</user>
+
+</users>
